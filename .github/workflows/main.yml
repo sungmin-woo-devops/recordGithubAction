@@ -6,8 +6,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Run test.py!
-        run: python test.py
-      - name: Find test.py!
-        run: find / -name 'test.py'
+    - uses: actions/checkout@v2
+    - name: Python
+      run: ls -al
+    - name: 2. Check Python packages
+      run: pip list
+    - name: 3. Upgrade pip
+      run: python -m pip instsall --upgrade pip
+    - name: 4. Install packages
+      run: pip install -r requirements.txt
+    - name: 3. Run Python
+      run: python test.py
