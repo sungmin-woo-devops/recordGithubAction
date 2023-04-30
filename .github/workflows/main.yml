@@ -9,3 +9,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run test.py!
         run: python test.py
+      - name: Find test.py!
+        run: find / -name 'test.py'
