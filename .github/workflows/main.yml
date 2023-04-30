@@ -11,5 +11,5 @@ jobs:
       - name: print directory
         run: ls -l
       - name: print python version
-        run: python -v
+        run: python test.py
       
