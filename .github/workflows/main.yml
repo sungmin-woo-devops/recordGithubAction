@@ -6,10 +6,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: print "Hello World!"
-        run: echo Hello, World!
-      - name: print directory
-        run: ls -l
-      - name: print python version
+      - uses: actions/checkout@v2
+      - name: Run test.py!
         run: python test.py
-      
