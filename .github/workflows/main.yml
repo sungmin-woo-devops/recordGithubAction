@@ -12,7 +12,7 @@ jobs:
     - name: 2. Check Python packages
       run: pip list
     - name: 3. Upgrade pip
-      run: python -m pip instsall --upgrade pip
+      run: python -m pip intsall --upgrade pip
     - name: 4. Install packages
       run: pip install -r requirements.txt
     - name: 3. Run Python
